@@ -321,7 +321,8 @@ class Settings extends \WP_Piwik\Admin {
 				'uid' => __ ( 'WP User ID', 'wp-piwik' ),
 				'email' => __ ( 'Email Address', 'wp-piwik' ),
 				'username' => __ ( 'Username', 'wp-piwik' ),
-				'displayname' => __ ( 'Display Name (Not Recommended!)', 'wp-piwik' )
+				'displayname' => __ ( 'Display Name (Not Recommended!)', 'wp-piwik' ),
+				'displaynameAndID' => __ ( 'Display Name and ID', 'wp-piwik' )
 		), __ ( 'When a user is logged in to WordPress, track their &quot;User ID&quot;. You can select which field from the User\'s profile is tracked as the &quot;User ID&quot;. When enabled, Tracking based on Email Address is recommended.', 'wp-piwik' ), '', $isNotTracking, $fullGeneratedTrackingGroup );
 
 		echo $submitButton;

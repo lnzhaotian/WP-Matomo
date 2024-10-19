@@ -144,6 +144,8 @@ class TrackingCode {
 				$pkUserId = $current_user->user_login;
 			} elseif ( $uidFrom == 'displayname' ) {
 				$pkUserId = $current_user->display_name;
+			} elseif ( $uidFrom == 'displaynameAndID' ) {
+				$pkUserId = $current_user->display_name . '_' . $current_user->ID;
 			}
 		}
 		$pkUserId = apply_filters('wp-piwik_tracking_user_id', $pkUserId);
